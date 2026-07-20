@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "voltopolis"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "entsoe-py",
+    "pandas",
+    "python-dotenv",
+]
+
+[project.optional-dependencies]
+dev = [
+    "invoke",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/helpers"]
