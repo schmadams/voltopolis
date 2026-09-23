@@ -6,3 +6,6 @@ def check_env():
 
 if __name__ == '__main__':
     check_env()
+    key = os.environ.get("ENTSOE_API_KEY")
+    a=1
+    a=1

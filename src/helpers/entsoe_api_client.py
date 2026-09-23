@@ -14,7 +14,9 @@ from datetime import date, timedelta
 import pandas as pd
 from entsoe import EntsoePandasClient
 from entsoe.mappings import Area
+from helpers.check_env import check_env
 
+check_env()
 
 CHUNK_DAYS = 360  # stay under ENTSO-E per-request limits
 

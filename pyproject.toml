@@ -12,6 +12,9 @@ dependencies = [
     "entsoe-py",
     "pandas",
     "python-dotenv",
+    "supabase",
+    "plotly",
+    "scipy>=1.18.0",
 ]
 
 [project.optional-dependencies]
